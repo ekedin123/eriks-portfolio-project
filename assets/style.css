@@ -13,21 +13,39 @@ body {
 main {
   display: flex;
   flex-wrap: wrap;
+  /* border: 5px solid black; */
 }
 section {
   justify-content: flex-start;
 }
-section p {
-  background-color: aquamarine;
-  margin: 2px;
-}
 
 section:hover p {
-  opacity: 0.5;
+  filter: none;
 }
 
 section p:hover {
-  opacity: 1;
+  filter: none;
+}
+
+aside article p {
+  font-size: 20px;
+}
+
+aside article h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+aside article h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+aside article h2 ul {
+  font-size: 30px;
+}
+.header nav {
+  float: right;
 }
 
 .header {
@@ -37,15 +55,11 @@ section p:hover {
 }
 .header h1 {
   display: inline-block;
-  font-size: 40px;
-  margin-left: 50px;
+  font-size: 50px;
+  margin-left: 30px;
 }
 .header h2 {
   margin-right: 50px;
-  text-decoration: none;
-}
-.header nav {
-  float: right;
 }
 
 .header nav ul li {
@@ -53,11 +67,25 @@ section p:hover {
   margin-left: 10px;
   margin-top: 20px;
   list-style-type: none;
+  font-size: 30px;
+}
+.navlinks li a {
+  text-decoration: none;
+  color: cadetblue;
+}
+.firstappimg {
+  width: 700px;
+  border-radius: 20px;
+}
+.content {
+  display: flex;
+  flex-direction: row;
 }
 .article {
+  order: 1;
   font-size: 10px;
-  border-style: solid;
-  border-color: #797474;
+  /* border-style: solid;
+  border-color: #797474; */
   margin-right: 20px;
   margin-bottom: 20px;
   padding: 10px;
@@ -68,42 +96,87 @@ section p:hover {
   color: #323030;
 }
 
+.profilepic {
+  width: 250px;
+  height: 225px;
+  margin: auto;
+  display: block;
+  border-radius: 50%;
+}
 .projects {
+  order: 2;
   background-color: transparent;
+  width: 80%;
   padding: 50px;
-  display: inline-flex;
-  flex-wrap: wrap-reverse;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.contacts a {
+  list-style: none;
+  text-decoration: none;
+  font-size: 20px;
+  color: #13293d;
 }
 
 .work {
-  border-style: solid;
-  border-width: 1px;
+  /* border-style: solid;
+  border-width: 1px; */
   padding: 10px;
   margin: 20px;
   flex: 0 0 300px;
   border-radius: 20px;
   box-shadow: 15px 15px 15px #13293d;
 }
-
 .work header {
-  padding: 10px;
-  border-radius: 15deg;
+  text-align: center;
+}
+.work div main section {
   text-align: center;
 }
 
+.comingsoon {
+  width: 200px;
+}
 .work p {
   text-align: center;
   border-radius: 20px;
 }
+.thanks {
+  text-align: center;
+}
 
+#copyright {
+  text-align: center;
+}
 @media screen and (max-width: 768px) {
   header {
+    margin: auto;
     flex-direction: column;
+    text-align: center;
   }
 
-  main {
-    max-width: 1200px;
+  nav {
+    text-align: center;
+  }
+  .header h1 {
+    margin-left: 0;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .projects {
+    width: 100%;
+  }
+  .article {
+    width: 100%;
+  }
+  .firstappimg {
+    width: 250px;
+  }
+  .comingsoon {
+    width: 150px;
   }
 }
