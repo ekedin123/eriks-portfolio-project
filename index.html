@@ -11,6 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Shippori+Antique+B1&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="assets/site screenshot.png" />
+    <link rel="stylesheet" href="assets/WIN_20231121_15_04_46_Pro.jpg" />
   </head>
   <style>
     body {
@@ -19,6 +21,9 @@
       background-attachment: fixed;
       background-size: cover;
     }
+    .blur_effect {
+      filter: blur(5px);
+    }
   </style>
 
   <body>
@@ -26,7 +31,7 @@
       <h1>Erik Edin Dev Portfolio</h1>
       <nav>
         <h2>
-          <ul>
+          <ul class="navlinks">
             <li><a href="#about-me">About Me</a></li>
             <li><a href="#project-portfolio">Project Portfolio</a></li>
             <li><a href="#links">Links</a></li>
@@ -34,83 +39,83 @@
         </h2>
       </nav>
     </header>
-
-    <main class="projects">
-      <section class="work">
-        <header>section1</header>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat
-          reprehenderit ratione labore numquam non at voluptates quas nulla fuga
-          ea temporibus, culpa praesentium. Odio voluptatum, odit similique
-          magni velit iste!
-        </p>
-      </section>
-      <section class="work">
-        <header>section2</header>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
-          doloremque cupiditate sapiente sint totam alias assumenda et ratione
-          quidem fugit nihil earum sed amet, quibusdam dolore atque. Veritatis,
-          asperiores placeat.
-        </p>
-      </section>
-      <section class="work">
-        <header>section3</header>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat,
-          cumque. Magni adipisci, libero incidunt quibusdam explicabo velit
-          aliquam culpa illum nostrum nulla aliquid! Doloribus praesentium
-          perferendis id aut libero neque?
-        </p>
-      </section>
-      <section class="work">
-        <header>section 4</header>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
-          at non fuga quia amet alias, hic quisquam doloremque, illum ratione
-          explicabo sunt earum repudiandae id dolore delectus eveniet illo eius.
-        </p>
-      </section>
-    </main>
-    <aside class="article">
-      <article>
-        <h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere
-            dicta commodi ab doloribus tempora quisquam cupiditate mollitia
-            porro officia, magnam cum voluptatibus optio dignissimos deserunt
-            quidem debitis consequatur dolore nam.
+    <div class="content">
+      <main class="projects" id="project-portfolio">
+        <section class="work">
+          <header>First Application</header>
+          <p class="blur_effect">
+            <a href="https://ekedin123.github.io/demo-repo/"
+              ><img
+                class="firstappimg"
+                src="assets/site screenshot.png"
+                alt="First Deployed Site"
+            /></a>
           </p>
-        </h2>
-      </article>
-      <article>
-        <h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
-            suscipit voluptas tenetur commodi reprehenderit eum doloremque nobis
-            maxime illum nam adipisci placeat vitae soluta totam, consequuntur
-            quaerat, iusto magnam mollitia?
+        </section>
+        <section class="work">
+          <header id="#links">Next Project</header>
+          <p class="blur_effect">
+            <img
+              class="comingsoon"
+              src="https://images.unsplash.com/photo-1614469723922-c043ad9fd036?q=80&w=1927&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="imaginearthere"
+            />
           </p>
-        </h2>
-      </article>
-      <article>
-        <h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-            ipsa veniam in eaque ullam quos placeat minus sit dolores magnam
-            totam adipisci aperiam quis vitae, sunt sed eum nesciunt debitis.
+        </section>
+        <section class="work">
+          <header id="">Next Project</header>
+          <p class="blur_effect">
+            <img
+              class="comingsoon"
+              src="https://images.unsplash.com/photo-1614469723922-c043ad9fd036?q=80&w=1927&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="imaginearthere"
+            />
           </p>
-        </h2>
-      </article>
-    </aside>
+        </section>
+        <section class="work">
+          <header>Next Project</header>
+          <p class="blur_effect">
+            <img
+              class="comingsoon"
+              src="https://images.unsplash.com/photo-1614469723922-c043ad9fd036?q=80&w=1927&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="imaginearthere"
+            />
+          </p>
+        </section>
+      </main>
+      <aside class="article" id="about-me">
+        <article>
+          <h1>About Me</h1>
+          <img
+            class="profilepic"
+            src="assets/WIN_20231121_15_04_46_Pro.jpg"
+            alt="profile picture"
+          />
+        </article>
+        <article>
+          <p>
+            I joined Bootcamp because.......... Erik is from........ Erik Likes
+            ........ Erik Doesnt ........... Erik Has .............. Erik is
+            .................
+          </p>
+        </article>
+        <article>
+          <h2>Contact Me</h2>
+          <ul class="contacts" id="links">
+            <li><a href="https://github.com/ekedin123">GitHub</a></li>
+            <li><a href="mailto: ekedin@gmail.com">Email Me</a></li>
+            <li>
+              <a href="https://www.linkedin.com/in/erik-edin-03b19a2a1/"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </article>
+      </aside>
+    </div>
     <footer>
-      <h3></h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ex
-        deserunt, exercitationem unde quia provident, numquam, similique
-        possimus harum molestias laborum ullam ab pariatur doloremque ipsa
-        fugiat eveniet esse cupiditate.
-      </p>
+      <h3 class="thanks">Thank You For viewing My Page!</h3>
+      <p id="copyright">@Edin2023, All Rights Reserved, ❤️</p>
     </footer>
   </body>
 </html>
